@@ -63,15 +63,15 @@ p users["Erik"][:lottery_numbers]
 
 p users["Avril"][:pets]
 
-# p users.min["Erik"][:lottery_numbers.to_i]
+p users["Erik"][:lottery_numbers].min
 
-#
+users["Avril"][:lottery_numbers].each { |number| p number if number.even? }
 
 p users["Erik"][:lottery_numbers].push(7)
 
 p users["Erik"][:home_town] = "Edinburgh"
 
-# p users["Erik"][:pets]{"dog" = "Fluffy"}
+p users["Erik"][:pets].push(:name => "Fluffy" , :species => "dog")
 
 p users["Ruben"]= {
   :twitter => "rubentwitter",
