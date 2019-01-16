@@ -16,15 +16,21 @@ united_kingdom = [
   }
 ]
 
-# united_kingdom[1, :capital] = "Cardiff"
+united_kingdom[1] = [:capital => "Cardiff"]
 
-# united_kingdom.push({name: = "Northern Ireland"},{population: = 1,811,000},{capital: = "Belfast"})
+uk_NI = [
+    name: "Northern Ireland",
+    population: 1811000,
+    capital: "Belfast"
+]
+
+united_kingdom = united_kingdom.concat(uk_NI)
+
+# for name in united_kingdom[]
+#   p name:
+# end
 
 #
-
-#
-
-p united_kingdom
 
 # Complete these tasks:
 # Change the capital of Wales from "Swansea" to "Cardiff".
